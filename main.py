@@ -4,12 +4,14 @@ app=flask.Flask(__name__)
 
 @app.route("/")
 def index():
-    return flask.render_template("index.html",
+    return flask.render_template("index-jinja.html",
                                  about_me=details.ABOUT_ME,
+                                 about_details=details.ABOUT_DETAILS,
+                                 skills=details.SKILLS
                                  )
 @app.route("/jinja/")
 def index_jinja():
-    return flask.render_template("index-jinja.html",
+    return flask.render_template("index.html",
                                  about_me=details.ABOUT_ME,
                                  about_details=details.ABOUT_DETAILS,
                                  skills=details.SKILLS
