@@ -93,16 +93,16 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="12" y="1" xlink:href="static/img/dp.png"/>
+                                    <image class="home__blob-img" x="12" y="1" xlink:href="{{url_for('static', filename='/img/dp.png') }}"/>
                                 </g>
                             </svg>
                             
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Hi, I am Indresh</h1>
-                            <h3 class="home__subtitle">Data Scientist</h3>
+                            <h3 class="home__subtitle">{{about_me["position"]}}</h3>
                             <p class="home__description">
-                                A self-motivated, tech-savvy and result oriented professional who always looks for opportunity to exercise creative and innovative ideas to make contribution to the development of the organization. Experienced in creating end-to- end Analytics solutions.
+                                {{about_me["intro"]}}
                             </p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -129,20 +129,20 @@
                     <!--<img src="static/img/about.jpg" alt="" class="about__img">-->
                     <div class="about__data">
                         <p class="about__description">
-                            A self-motivated, tech-savvy and result oriented professional who always looks for opportunity to exercise creative and innovative ideas to make contribution to the development of the organization. Experienced in creating end-to- end Analytics solutions.
+                            {{about_me["about"]}}
                         </p>
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">08+</span>
+                                <span class="about__info-title">{{about_details["years_of_exp"]}}</span>
                                 <span class="about__info-name">Years <br> Experience</span>
                             </div>
                             <div>
-                                <span class="about__info-title">20+</span>
+                                <span class="about__info-title">{{about_details["projects"]}}</span>
                                 <span class="about__info-name">Completed <br> Projects</span>
                             </div>
                             <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name"> Companies <br> worked</span>
+                                <span class="about__info-title">{{about_details["clients"]}}</span>
+                                <span class="about__info-name"> Clients <br> Worked</span>
                             </div>
                 
                         </div>
@@ -161,119 +161,49 @@
                 <span class="section__subtitle">My technical level</span>
                 <div class="skills__container container grid">
                     <!--====================SKILL 1 ====================-->
+                    {%for skill in skills%}
                     <div>
                         
                         <div class="skills__contents skills__open">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Machine Learning</h1>
-                                    <span class="skills_subtitle">More than 5 Years</span>
+                                    <h1 class="skills__title">{{skill["header"]}}</h1>
+                                    <span class="skills_subtitle">More than {{skill["exp"]}} Years</span>
                                 </div>
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
                             <div class="skills__list grid">
+                                {%for skilltools in skill['tools']%}
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">
-                                            HTML
+                                            {{skilltools["name"]}}
                                         </h3>
-                                        <span class="skills__number">90%</span>
+                                        <span class="skills__number">{{skilltools['perct']}}%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
+                                        <span class="skills__percentage" style="width: {{skilltools['perct']}}%;"></span>
                                     </div>
                                 </div>
+                                {%endfor%}
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
-                                            CSS
-                                        </h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
-                                            JS
-                                        </h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
+                            
 
                             </div>
                         </div>
                         
 
                     </div>
-                    <div>
-                        
-                        <div class="skills__contents skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Machine Learning</h1>
-                                    <span class="skills_subtitle">More than 5 Years</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
-                                            HTML
-                                        </h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
-                                            CSS
-                                        </h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">
-                                            JS
-                                        </h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-
-                    </div>
+                    {%endfor%}
+                    
                     
                 </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-
+                
             </section>
 
             <!--==================== SERVICES ====================-->
