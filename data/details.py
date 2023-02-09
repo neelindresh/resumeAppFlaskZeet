@@ -183,19 +183,46 @@ QUALIFICATION={
     
 PROJECTS=[
         {
+               "title":"AI-celerate",
+                "desc":"An AI platforms provide an end-to-end solution for building, training, and deploying machine learning models, making it easier for organizations to incorporate AI and manage large-scale deployments..",
+                "keypoints":["Research and Define Requirements: Conduct market research and gather requirements from potential users to determine what features and functionality the AI platform should have.",
+                             "Develop Data Management System: Design and develop a data management system that can efficiently collect, store, and process large amounts of data.",
+                             "Create Model Development Tools: Develop tools and libraries that make it easy for users to build, test, and iterate on machine learning models.",
+                             "Deployment Infrastructure: Design and implement a deployment infrastructure that enables models to be deployed in a variety of environments, such as cloud, on-premises, or edge devices.",
+                             "Monitor and Manage Models: Develop tools for monitoring and managing models in production, including performance and accuracy metrics, to ensure they continue to deliver value over time."],
+                "role":"Machine Learning Engineer",
+                "org": "Virtusa",
+                "tech": ["python","scikit-learn","Machine Learning","flask","Tabular Data","Visualization"],
+                "Links":"",
+                "category":"ML"
+        },
+        {
                 "title":"AI-celerate",
-                "desc":"An AI platform is a comprehensive system that enables organizations to develop, deploy, and manage artificial intelligence models and applications. It provides an end-to-end solution for building, training, and deploying machine learning models, and it often includes features such as data management, model development tools, and deployment infrastructure. The goal of an AI platform is to make it easier for organizations to incorporate AI into their operations and workflows, and to help manage the complexity of large-scale AI deployments.",
-                "keypoints":[
-                "Data Management: The ability to collect, store, and process large amounts of data.",
-                "Model Development Tools: Tools and libraries for building and testing machine learning models."
-                "Deployment Infrastructure: The ability to deploy AI models in a variety of environments, such as cloud, on-premises, or edge devices.",
-                "Monitoring and Management: Tools for monitoring and managing AI models in production, including performance and accuracy metrics.",
-                "Explainability: The ability to understand and interpret the decisions made by AI models, and to provide transparency into their workings.",
-                "Collaboration: The ability for multiple users to work together on AI projects, sharing data and models, and tracking progress.",
-                "Security: Measures to ensure the security and privacy of data used in AI models, and to prevent unauthorized access or misuse.",
-                "Scalability: The ability to scale AI models to meet the demands of large and growing data sets.",
-                "Integration: The ability to integrate AI models with existing IT systems and workflows.",
-                "Innovation: A platform that encourages and enables innovation, providing access to new technologies and techniques as they emerge."]
+                "desc":"An AI platforms provide an end-to-end solution for building, training, and deploying machine learning models, making it easier for organizations to incorporate AI and manage large-scale deployments..",
+                "keypoints":["Research and Define Requirements: Conduct market research and gather requirements from potential users to determine what features and functionality the AI platform should have.",
+                             "Develop Data Management System: Design and develop a data management system that can efficiently collect, store, and process large amounts of data.",
+                             "Create Model Development Tools: Develop tools and libraries that make it easy for users to build, test, and iterate on machine learning models.",
+                             "Deployment Infrastructure: Design and implement a deployment infrastructure that enables models to be deployed in a variety of environments, such as cloud, on-premises, or edge devices.",
+                             "Monitor and Manage Models: Develop tools for monitoring and managing models in production, including performance and accuracy metrics, to ensure they continue to deliver value over time."],
+                "role":"Machine Learning Engineer",
+                "org": "Virtusa",
+                "tech": ["python","scikit-learn","Machine Learning","flask","Tabular Data","Visualization"],
+                "Links":"",
+                "category":"DL"
+        },
+        {
+                "title":"AI-celerate",
+                "desc":"An AI platforms provide an end-to-end solution for building, training, and deploying machine learning models, making it easier for organizations to incorporate AI and manage large-scale deployments..",
+                "keypoints":["Research and Define Requirements: Conduct market research and gather requirements from potential users to determine what features and functionality the AI platform should have.",
+                             "Develop Data Management System: Design and develop a data management system that can efficiently collect, store, and process large amounts of data.",
+                             "Create Model Development Tools: Develop tools and libraries that make it easy for users to build, test, and iterate on machine learning models.",
+                             "Deployment Infrastructure: Design and implement a deployment infrastructure that enables models to be deployed in a variety of environments, such as cloud, on-premises, or edge devices.",
+                             "Monitor and Manage Models: Develop tools for monitoring and managing models in production, including performance and accuracy metrics, to ensure they continue to deliver value over time."],
+                "role":"Machine Learning Engineer",
+                "org": "Virtusa",
+                "tech": ["python","scikit-learn","Machine Learning","flask","Tabular Data","Visualization"],
+                "Links":"",
+                "category":"MLOps"
         }
         
         

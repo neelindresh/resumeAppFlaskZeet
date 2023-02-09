@@ -8,7 +8,8 @@ def index():
                                  about_me=details.ABOUT_ME,
                                  about_details=details.ABOUT_DETAILS,
                                  skills=details.SKILLS,
-                                 qualification=details.QUALIFICATION
+                                 qualification=details.QUALIFICATION,
+                                 projects=details.PROJECTS
                                  )
 @app.route("/jinja/")
 def index_jinja():

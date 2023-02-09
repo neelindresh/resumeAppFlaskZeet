@@ -100,6 +100,12 @@ button,input{
     border: none;
     outline: none;
 }
+.box{
+    background-color: var(--skin-color);
+    padding: .15rem;
+    border-radius: .25rem;
+    margin: .15rem;
+}
 /*=============== LAYOUT ===============*/
 .container{
     max-width: 1250px;
@@ -593,6 +599,9 @@ margin-left: auto;
 .work__button:hover .work__button-icon{
     transform: translateX(.25rem);
 }
+.work__service-modal{
+    margin-bottom: var(--mb-1-5);
+}
 
 /* Active Item Work */
 .active-work{
@@ -630,7 +639,7 @@ margin-left: auto;
 }
 
 .portfolio__popup-content{
-    grid-template-columns: repeat(2,1fr);
+    
     align-items: center;
     column-gap: 3rem;
 }
@@ -657,7 +666,7 @@ margin-left: auto;
 }
 .details__description{
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
 }
 .details__info li{
     margin-bottom: var(--mb-0-75);
@@ -1239,6 +1248,11 @@ textarea.input{
     }
     .portfolio__popup-close{
         top: .5rem;
+    }
+    .box_li{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
     }
 }
 

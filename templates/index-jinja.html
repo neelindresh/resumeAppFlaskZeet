@@ -369,13 +369,51 @@
             <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">Web</span>
-                <span class="work__item" data-filter=".app">App</span>
-                <span class="work__item"data-filter=".design">Design</span>
+                <span class="work__item" data-filter=".ML">ML</span>
+                <span class="work__item" data-filter=".DL">DL</span>
+                <span class="work__item"data-filter=".MLOps">MLOps</span>
             </div>
             <div class="work__container container grid">
+                {%for i in projects%}
+                <div class="work__card mix {{i['category']}}">
+                    
+                    <h3 class="work__title">{{i['title']}}</h3>
+                    <p class="work__description"> {{i['desc'][:150]}}...</p>
+                    <span class="work__button">Show More...
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">{{i['title']}}</h3>
+                        <p class="details__description">
+                            {{i['desc']}}
+                        </p>
+                        <ul class="services__modal-services grid work__service-modal">
+                            {%for points in i['keypoints']%}
+                            <li class="services__modal-service">
+                                <i class="uil uil-check-circle services__modal-icon"></i>
+                                <p class="services__modal-info">
+                                    {{points}}
+                                </p>
+                            </li>
+                            {%endfor%}
+                            
+                        </ul>
+                        <ul class="details__info">
+                            <li>Created - <span>{{i['year']}}</span></li>
+                            <li class="box_li">Technologies - 
+                                {%for tech in i['tech']%}
+                                <span class="box">{{tech}}</span>
+                                {%endfor%}
+                            </li>
+                            <li>Role - <span>{{i['role']}}</span></li>
+                            <li>View - <span><a href="#">{{i['links']}}</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                {%endfor%}
+
                 <div class="work__card mix app">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title">APP demo</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -394,7 +432,7 @@
                     </div>
                 </div>
                 <div class="work__card mix web">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title">APP demo</h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -414,7 +452,7 @@
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -434,7 +472,7 @@
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -454,7 +492,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -474,7 +512,7 @@
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="{{ url_for('static', filename='img/work-1.webp') }}" alt="" class="work__img">
+                    
                     <h3 class="work__title"></h3>
                     <span class="work__button">Demo
                         <i class="uil uil-arrow-right work__button-icon"></i>
@@ -501,9 +539,7 @@
                     <span class="portfolio__popup-close">
                         <i class="uil uil-times"></i>
                     </span>
-                    <div class="pp__thumbnail">
-                        <img src="{{ url_for('static', filename='img/work-2.webp') }}" alt="" class="portfolio__popup-img">
-                    </div>
+                    
                     <div class="portfolio__popup-info">
                         <div class="portfolio__popup-subtitle">
                             Featured - <span>Design</span>
