@@ -20,7 +20,7 @@
     <!--<link rel="stylesheet" href="assets/css/style.css">-->
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 
-    <title>Responsive portfolio website - Crypticalcoder</title>
+    <title>Resume - Indresh Bhattacharya</title>
 </head>
 
 <body>
@@ -268,99 +268,7 @@
                         {%endif%}
                     {%endfor%}
 
-                    <div class="skills__group skills__active" data-content id="frontend">
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:90%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:80%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JS</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:70%"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__group" data-content id="backend">
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML Backend</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:90%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS Backend</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:80%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JS Backend</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:70%"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__group" data-content id="design">
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML Design</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:90%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS Design</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:80%"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JS Design</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width:70%"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -372,6 +280,7 @@
                 <span class="work__item" data-filter=".ML">ML</span>
                 <span class="work__item" data-filter=".DL">DL</span>
                 <span class="work__item"data-filter=".MLOps">MLOps</span>
+                <span class="work__item"data-filter=".Others">Others</span>
             </div>
             <div class="work__container container grid">
                 {%for i in projects%}
@@ -387,17 +296,7 @@
                         <p class="details__description">
                             {{i['desc']}}
                         </p>
-                        <ul class="services__modal-services grid work__service-modal">
-                            {%for points in i['keypoints']%}
-                            <li class="services__modal-service">
-                                <i class="uil uil-check-circle services__modal-icon"></i>
-                                <p class="services__modal-info">
-                                    {{points}}
-                                </p>
-                            </li>
-                            {%endfor%}
-                            
-                        </ul>
+                        
                         <ul class="details__info">
                             <li>Created - <span>{{i['year']}}</span></li>
                             <li class="box_li">Technologies - 
@@ -412,124 +311,7 @@
                 </div>
                 {%endfor%}
 
-                <div class="work__card mix app">
-                    
-                    <h3 class="work__title">APP demo</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">APP demo</h3>
-                        <p class="details__description">
-                            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work__card mix web">
-                    
-                    <h3 class="work__title">APP demo</h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title">APP demo</h3>
-                        <p class="details__description">
-                            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix design">
-                    
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">
-                            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix app">
-                    
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">
-                            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix web">
-                    
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">
-                            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="work__card mix app">
-                    
-                    <h3 class="work__title"></h3>
-                    <span class="work__button">Demo
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
-                    <div class="portfolio__item-details">
-                        <h3 class="details__title"></h3>
-                        <p class="details__description">
-                            bdajsdbjkasbdkasbdkasbdkasb dkas
-                        </p>
-                        <ul class="details__info">
-                            <li>Created - <span>4 Dec 2022</span></li>
-                            <li>Technologies - <span>HTML CSS JS</span></li>
-                            <li>Role - <span>Frontend</span></li>
-                            <li>View - <span><a href="#">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <!-- Portfolio Popup -->

@@ -572,6 +572,9 @@ margin-left: auto;
     padding: 1.25rem;
     border-radius: .5rem;
 }
+.work__description{
+    font-size: var(--smaller-font-size);
+}
 .portfolio__item-details{
     display: none;
 }
