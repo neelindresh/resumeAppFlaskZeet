@@ -288,4 +288,12 @@ PROJECTS=[
         },
 ]
     
+AWARDS=[
+         {
+                 "text":"Awarded with <b>Stellar Award</b>",
+                 "link":"",
+                 "year":2018,
+                 "org": "Virtusa"
+        },
+]
     
