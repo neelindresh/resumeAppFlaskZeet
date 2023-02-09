@@ -1,3 +1,5 @@
+from flask import Markup
+
 ABOUT_ME={
     "position":"Data Scientist | Author PyMLPipe",
     "about": "I have extensive experience delivering end-to-end analytics solutions, having successfully completed over 15 projects across various industries. My expertise lies in leveraging data to uncover insights, drive business outcomes, and create value for organizations. I am a strategic thinker with excellent problem-solving skills, and I have a proven track record of delivering innovative solutions that meet and exceed expectations. I am eager to bring my expertise and passion for data science to a dynamic and forward-thinking organization.",
@@ -290,10 +292,36 @@ PROJECTS=[
     
 AWARDS=[
          {
-                 "text":"Awarded with <b>Stellar Award</b>",
-                 "link":"",
+                 "text":Markup("Awarded with <b><i>Stellar Award</i></b> for REWARDING,HIGH PERFORMANCE,ENCOURAGING,FUTURE SUCCESS"),
+                 "link":"pdf/Steller_Award_Virtusa.jpeg",
                  "year":2018,
-                 "org": "Virtusa"
+                 "org": "Virtusa",
+                 "url": "img/Virtusa_logo.jpeg",
+                 "subtitle":"Information Technology Services Company "
+        },
+        {
+                 "text":Markup("Awarded with <b><i>Dream Team Award</i></b> best team in Innvation"),
+                 "link":"",
+                 "year":2019,
+                 "org": "Virtusa",
+                 "url": "img/Virtusa_logo.jpeg",
+                 "subtitle":"Information Technology Services Company "
+        },
+        {
+                 "text":Markup("Awarded with <b><i>Kudos Award</i></b>. We appreciate your meaningful contributions that helped us elevate our experience"),
+                 "link":"pdf/Indresh Bhattacharya_Kudos_2006968 (1).pdf",
+                 "year":2022,
+                 "org": "KMPG",
+                 "url": "img/KMPG.jpeg",
+                 "subtitle":"Assurance and Consulting Services LLP"
+        },
+        {
+                 "text":Markup("Awarded with <b><i>Rising Star Award</i></b>. We appreciate your enthusiasm and passion that has brougth a positive impact on our team and work enviroment"),
+                 "link":"pdf/Indresh Bhattacharya_Rising Star award_1952138 (1).pdf",
+                 "year":2022,
+                 "org": "KMPG",
+                 "url": "img/KMPG.jpeg",
+                 "subtitle":"Assurance and Consulting Services LLP"
         },
 ]
     

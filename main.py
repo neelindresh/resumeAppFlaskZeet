@@ -4,12 +4,20 @@ app=flask.Flask(__name__)
 
 @app.route("/")
 def index():
+    detailsforawards=details.AWARDS
+    '''
+    for i in detailsforawards:
+        i["link"]=flask.url_for("static",filename=i["link"])
+        i["url"]=flask.url_for("static",filename=i["url"])
+        print(i)
+    '''
     return flask.render_template("index-jinja.html",
                                  about_me=details.ABOUT_ME,
                                  about_details=details.ABOUT_DETAILS,
                                  skills=details.SKILLS,
                                  qualification=details.QUALIFICATION,
-                                 projects=details.PROJECTS
+                                 projects=details.PROJECTS,
+                                 awards=detailsforawards
                                  )
 @app.route("/jinja/")
 def index_jinja():

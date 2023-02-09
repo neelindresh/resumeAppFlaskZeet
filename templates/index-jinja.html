@@ -494,54 +494,27 @@
             <h2 data-heading="My Client Say" class="section__title">Testimonials</h2>
             <div class="testimonials__container container swiper">
                 <div class="swiper-wrapper">
+                    {%for i in awards%}
                     <div class="testimonial__card swiper-slide">
                         <div class="testimonial__quote">
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
                         <p class="testimonial__desciption">
-                            Relationships are represented as translations in the embedding space.
+                            {{i["text"]}}
+                           
                         </p>
-                        <h3 class="testimonial__date">March 27 2020</h3>
+                        
+                        <h3 class="testimonial__date">{{i["year"]}}</h3>
                         <div class="testimonial__profile">
-                            <img src="{{ url_for('static', filename='img/client1.jpg') }}" alt="" class="testimonial__profile-img">
+                            <img src="{{url_for('static',filename=i['url'])}}" alt="" class="testimonial__profile-img">
                             <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">John Doe</span>
-                                <span class="testimonial__profile-details">VP craftmont</span>
+                                <span class="testimonial__profile-name">{{i["org"]}}  <a href="{{url_for('static',filename=i['link'])}}" class="testimonial__link"><i class="uil uil-external-link-alt"></i></a> </span>
+                                <span class="testimonial__profile-details">{{i["subtitle"]}}</span>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial__card swiper-slide">
-                        <div class="testimonial__quote">
-                            <i class="bx bxs-quote-alt-left"></i>
-                        </div>
-                        <p class="testimonial__desciption">
-                            Relationships are represented as translations in the embedding space. 
-                        </p>
-                        <h3 class="testimonial__date">March 27 2020</h3>
-                        <div class="testimonial__profile">
-                            <img src="{{ url_for('static', filename='img/client1.jpg') }}" alt="" class="testimonial__profile-img">
-                            <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">John Doe</span>
-                                <span class="testimonial__profile-details">VP craftmont</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial__card swiper-slide">
-                        <div class="testimonial__quote">
-                            <i class="bx bxs-quote-alt-left"></i>
-                        </div>
-                        <p class="testimonial__desciption">
-                            Relationships are represented as translations in the embedding space. 
-                        </p>
-                        <h3 class="testimonial__date">March 27 2020</h3>
-                        <div class="testimonial__profile">
-                            <img src="{{ url_for('static', filename='img/client1.jpg') }}" alt="" class="testimonial__profile-img">
-                            <div class="testimonial__profile-data">
-                                <span class="testimonial__profile-name">John Doe</span>
-                                <span class="testimonial__profile-details">VP craftmont</span>
-                            </div>
-                        </div>
-                    </div>
+                    {%endfor%}
+                    
                 </div>
                 <div class="swiper-pagination"></div> 
             </div>

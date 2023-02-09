@@ -857,6 +857,9 @@ margin-left: auto;
     flex-direction: column;
     row-gap: .4rem;
 }
+.testimonial__link{
+    color: var(--skin-color);
+}
 /* Swiper Class */
 .swiper-pagination-bullet{
     background-color: var(--box-color);
