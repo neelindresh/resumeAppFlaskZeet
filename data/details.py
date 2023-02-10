@@ -1,4 +1,5 @@
 from flask import Markup
+RESUME_LINK="pdf/Alexa-Cv.pdf"
 
 ABOUT_ME={
     "position":"Data Scientist | Author PyMLPipe",
@@ -185,6 +186,25 @@ QUALIFICATION={
     
 PROJECTS=[
         {
+                "title":"PyMlPipe | MLOps toolbox",
+                "desc":'''Pymlpipe is a cutting-edge open-source machine learning operations (MLOps) toolkit built in Python. It aims to provide an all-in-one solution for managing and streamlining machine learning projects, from model training and deployment to infrastructure and data monitoring.
+
+                        With Pymlpipe, users can benefit from features such as model monitoring, data monitoring, infrastructure monitoring, and data drift detection. This toolkit also integrates with other popular open-source tools such as DVC, Concept Drift Detection, and eXplainable Artificial Intelligence (XAI), making it a comprehensive solution for MLOps.
+
+                        The model monitoring feature helps users keep track of their models' performance, ensuring they are working as expected and allowing for quick detection and resolution of any issues. The data monitoring feature allows users to track the quality of their data and detect any data drift, helping to avoid issues that could impact the model's performance.
+
+                        The pipeline feature provides a streamlined process for managing model training and deployment, reducing the time and effort required to get models up and running. The infrastructure monitoring feature helps users keep an eye on their resources and ensures their systems are performing optimally.
+
+                        Pymlpipe is designed to be user-friendly and accessible, making it a great choice for organizations and individuals looking for a comprehensive MLOps solution. With its integration with cutting-edge technologies and open-source tools, it is well-positioned to help users stay ahead of the curve and stay competitive in today's rapidly-evolving machine learning landscape.''',
+                "keypoints":[],
+                "role":"Data Scientist",
+                "org": "Open-Source",
+                "tech": ["python","PyTorch","Deep Learning" ,"NLP","Compter Vision","MLOps","DVC"],
+                "Links":"https://github.com/neelindresh/pymlpipe",
+                "category":"MLOps",
+                "year": 2023
+        },
+        {
                 "title":"Finding writing tools for Auditors",
                 "desc":'''A Writing Tool for Auditors is a software application that helps auditors in their report writing process by providing features such as grammatical error correction, text scoring, text rephrasing, and segregating findings description into issue impact, background, and observation. The tool aims to enhance the efficiency, accuracy, and consistency of report writing for auditors by automating certain manual tasks and reducing the likelihood of human error. The tool can be built using various technologies such as NLP, AI, and machine learning.Define the requirements and feature set of the tool.Research and analyze the existing solutions in the market
                         Design the architecture of the tool
@@ -350,41 +370,118 @@ PROJECTS=[
                 "year":2018
                 
         },
+        
 ]
     
-AWARDS=[
+AWARDS=[{
+                 "text":"DP-900: Azure Fundamentals",
+                 "link":"pdf/Microsoft DP-900.pdf",
+                 "year":2023,
+                 "org": "Microsoft",
+                 "url": "img/Microsoft.png",
+                 "subtitle":"Satya Narayana Nadella",
+                 "name":"Steller Award"
+        },
          {
-                 "text":Markup("Awarded with <b><i>Stellar Award</i></b> for REWARDING,HIGH PERFORMANCE,ENCOURAGING,FUTURE SUCCESS"),
-                 "link":"pdf/Steller_Award_Virtusa.jpeg",
+                 "text":"Machine Learning Engineering for Production (MLOps)- Specialization",
+                 "link":"pdf/Machine Learning Engineering for Production (MLOps).pdf",
+                 "year":2022,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
+        },
+          {
+                 "text":"Applied Data Science with Python-Specialization",
+                 "link":"pdf/Applied Data Science with Python-Specialization.pdf",
                  "year":2018,
-                 "org": "Virtusa",
-                 "url": "img/Virtusa_logo.jpeg",
-                 "subtitle":"Information Technology Services Company "
+                 "org": "University of Michigan",
+                 "url": "img/UOM.jpeg",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
         },
-        {
-                 "text":Markup("Awarded with <b><i>Dream Team Award</i></b> best team in Innvation"),
-                 "link":"",
-                 "year":2019,
-                 "org": "Virtusa",
-                 "url": "img/Virtusa_logo.jpeg",
-                 "subtitle":"Information Technology Services Company "
+          {
+                 "text":"Deep Learning",
+                 "link":"pdf/Deep Learning.pdf",
+                 "year":2018,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
         },
-        {
-                 "text":Markup("Awarded with <b><i>Kudos Award</i></b>. We appreciate your meaningful contributions that helped us elevate our experience"),
-                 "link":"pdf/Indresh Bhattacharya_Kudos_2006968 (1).pdf",
+          {
+                 "text":"Sequence Models- Deep Learning",
+                 "link":"pdf/Sequence Models.pdf",
+                 "year":2018,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
+        },
+           {
+                 "text":"Convolutional Neural Networks- Deep Learning",
+                 "link":"pdf/Convolutional Neural Networks.pdf",
+                 "year":2018,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
+        },
+            {
+                 "text":"Microsoft Azure Machine Learning for Data Scientists",
+                 "link":"pdf/Microsoft Azure Machine Learning for Data Scientists.pdf",
                  "year":2022,
-                 "org": "KMPG",
-                 "url": "img/KMPG.jpeg",
-                 "subtitle":"Assurance and Consulting Services LLP"
+                 "org": "Coursera",
+                 "url": "img/Coursera-Logo_.png",
+                 "subtitle":"Mircrosoft",
+                 "name":"Steller Award"
+        },
+            {
+                 "text":"Create Machine Learning Models in Microsoft Azure",
+                 "link":"pdf/Create Machine Learning Models in Microsoft Azure.pdf",
+                 "year":2022,
+                 "org": "Coursera",
+                 "url": "img/Coursera-Logo_.png",
+                 "subtitle":"Mircrosoft",
+                 "name":"Steller Award"
+        },
+            {
+                 "text":"Machine Learning Data Lifecycle in Production",
+                 "link":"pdf/Machine Learning Data Lifecycle in Production.pdf",
+                 "year":2022,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
         },
         {
-                 "text":Markup("Awarded with <b><i>Rising Star Award</i></b>. We appreciate your enthusiasm and passion that has brougth a positive impact on our team and work enviroment"),
-                 "link":"pdf/Indresh Bhattacharya_Rising Star award_1952138 (1).pdf",
-                 "year":2022,
-                 "org": "KMPG",
-                 "url": "img/KMPG.jpeg",
-                 "subtitle":"Assurance and Consulting Services LLP"
+                 "text":"Applied Social Network Analysis in Python",
+                 "link":"pdf/Applied Social Network Analysis in Python.pdf",
+                 "year":2018,
+                 "org": "University of Michigan",
+                 "url": "img/UOM.jpeg",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
         },
+        {
+                 "text":"Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+                 "link":"pdf/Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization.pdf",
+                 "year":2022,
+                 "org": "DeepLearning.AI",
+                 "url": "img/deeplearningai.png",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
+        },
+        {
+                 "text":"Applied Text Mining in Python",
+                 "link":"pdf/Applied Text Mining in Python.pdf",
+                 "year":2018,
+                 "org": "University of Michigan",
+                 "url": "img/UOM.jpeg",
+                 "subtitle":"Coursera",
+                 "name":"Steller Award"
+        },
+        
 ]
 
 ROLES_AND_RESPOSIBILITY=[
@@ -393,28 +490,100 @@ ROLES_AND_RESPOSIBILITY=[
                 "subtitle":"Assurance and Consulting Services LLP",
                 "position": "Consultant",
                 "summary": "Data scientist with a strong background in AI and predictive maintenance. Proven track record of delivering innovative solutions to clients in the metal and mining sector and Investment Banking. Skilled in working with cross-functional teams and using data-driven insights to drive business growth.",
-                "keypoints":['Worked closely with clients in the metal and mining sector to implement AI solutions for predictive maintenance, resulting in cost savings of 25Cr for the client.', 'Conducted data analysis and built predictive models to identify areas for improvement and optimization.', 'Collaborated with cross-functional teams, including data scientists, engineers, and business analysts, to deliver high-quality solutions.', 'Contributed to the development of a finding writing tool for auditors.', 'Collaborated with stakeholders to understand requirements and develop a solution that met the needs of the business.', 'Utilized NLP and machine learning techniques to build a solution that provided grammatical error correction, text scoring, text rephrasing, and segregation of findings description into issue impact, background, and observation.']
+                "keypoints":["Metal and Mining :Worked with clients in the metal and mining sector using AI for predictive maintenance, resulting in cost savings of 25Cr. Conducted data analysis and built predictive models. Collaborated with cross-functional teams to deliver solutions.",
+                             "Internal Audit: Developed a finding writing tool for auditors using NLP and machine learning, providing grammatical error correction, text scoring, text rephrasing and segregation of findings into issue impact, background and observation. Collaborated with stakeholders to meet business requirements."],
+                "awards":[
+                        {
+                                "link":"pdf/Indresh Bhattacharya_Rising Star award_1952138 (1).pdf",
+                                "url": "img/KMPG.jpeg",
+                                "name":"Rising Star"
+                        },
+                        {
+                                "link":"pdf/Indresh Bhattacharya_Kudos_2006968 (1).pdf",
+                                "url": "img/KMPG.jpeg",
+                                "name":"Kudos"
+                        }
+                        
+                ]
         },
         {
                 "org":"PRM Fincon",
                 "subtitle":"Services Pvt. Ltd.",
-                "position": "Data Scientist"
+                "position": "Data Scientist",
+                "summary": "At PRM Fincom, I was a Key contributor to multiple projects aimed at improving financial processes at PRM Fincom. Utilized machine learning techniques for document processing and management. Proactively solved technical challenges to ensure project success and meet timelines. Deep understanding of financial sector and leveraged expertise to drive cost savings and improve operational efficiencies for clients. Collaborated with cross-functional teams to understand business requirements and deliver effective solutions.",
+                "keypoints":['I leveraged my expertise in NLP and computer vision to develop a solution for Named Entity Recognition using OCR for Financial Forms.',
+                             'I collaborated with cross-functional teams to ensure that all projects were delivered on time and to the highest quality standards.',
+                             'I also provided technical support to clients to ensure the successful implementation of these solutions in their workflows.'],
+                "awards":[]
         },
         {
                  "org": "Virtusa",
                  "subtitle":"IT Services Company ",
-                 "position": "Assosiate ML Engineer | ML Engineer"
+                 "position": "Assosiate ML Engineer | ML Engineer",
+                 "summary":"As a team leader, consulted with clients globally to access Agent-Atlas interaction data and successfully coordinated a team of 4 engineers. Developed end-to-end solutions utilizing machine learning and statistical methods to reduce error rate for agents from 9% to 2% in quarterly reports.",
+                 "keypoints":[ 'Contributed to the development of a Data Lineage Utility which streamlined data tracking and management processes.', 
+                              'Built an AI platform that provided advanced analytics and decision-making capabilities to clients.',
+                              'Developed a Data Quality Platform that ensured the accuracy and completeness of client data.', 
+                              'Utilized Generative Adversarial Networks (GANs) to develop a Synthetic Image Generation tool that allowed for the creation of realistic images.',
+                              'Designed and implemented a Google Ads Validation Framework that ensured the compliance of Google Ads with relevant regulations.'],
+                 "awards":[
+                         {
+                                "link":"pdf/Steller_Award_Virtusa.jpeg",
+                                "url": "img/Virtusa_logo.jpeg",
+                                "name":"Steller Award"
+                        },
+                        {
+                                "link":"",
+                                "url": "img/Virtusa_logo.jpeg",
+                                "name":"Dream Team"
+                        },
+                 ]
         }
         
         
         
 ]
 
-['Worked with clients in the metal and mining sector to implement AI for predictive maintenance.',
+
+SOCIALS={
+        "instra":"https://www.instagram.com/indreshbhattacharyya/",
+        "linkedin": "https://www.linkedin.com/in/indresh-bhattacharya/",
+        "git":"https://github.com/neelindresh"
+}
+
+
+
+
+
+
+
+"""
+
+KMPG=[
+        ['Worked with clients in the metal and mining sector to implement AI for predictive maintenance.',
                              'Utilized data analytics and machine learning algorithms to develop predictive models for equipment failure.', 
                              'Conducted root cause analysis of equipment failures and recommended maintenance strategies.',
                              'Delivered business results by saving 25 crores in revenue for the clients.','Led the development of a finding writing tool for auditors.', 
                              'Utilized NLP and computer vision to build a grammatical error correction and text scoring system.',
                              'Developed a text rephrasing system to ensure the findings description was clear and concise.',
                              'Segregated the findings description into categories such as issue impact, background, and observation.', 
-                             'Worked closely with auditors to ensure the tool met their requirements and provided meaningful insights.']
+                             'Worked closely with auditors to ensure the tool met their requirements and provided meaningful insights.'
+        ],
+
+
+        ['Worked closely with clients in the metal and mining sector to implement AI solutions for predictive maintenance, resulting in cost savings of 25Cr for the client.',
+                'Conducted data analysis and built predictive models to identify areas for improvement and optimization.', 
+                'Collaborated with cross-functional teams, including data scientists, engineers, and business analysts, to deliver high-quality solutions.', 
+                'Contributed to the development of a finding writing tool for auditors.',
+                'Collaborated with stakeholders to understand requirements and develop a solution that met the needs of the business.',
+                'Utilized NLP and machine learning techniques to build a solution that provided grammatical error correction, text scoring, text rephrasing, and segregation of findings description into issue impact, background, and observation.'
+                ]
+]
+PRM=[
+        '''Worked at PRM Fincom as a [Position], delivering innovative solutions for financial document management. Successfully completed several projects, including Financial Document Extraction, Automatic Document Tagging, Financial Document Classification, and Distributed Architecture Framework. Utilized advanced NLP and computer vision techniques to build a Named Entity Recognition system using OCR for financial forms.
+
+Collaborated with cross-functional teams to understand the business requirements and deliver effective solutions. Utilized data analysis and machine learning techniques to build robust models for document processing and management. Proactively identified and solved complex technical challenges to ensure project success and meet project timelines.
+
+Gained a deep understanding of the financial sector, its processes, and regulations, and leveraged this expertise to drive cost savings and improve operational efficiencies for clients.''',
+]
+"""

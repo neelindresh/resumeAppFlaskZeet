@@ -1,10 +1,10 @@
 data='''
-Worked closely with clients in the metal and mining sector to implement AI solutions for predictive maintenance, resulting in cost savings of 25Cr for the client.
-Conducted data analysis and built predictive models to identify areas for improvement and optimization.
-Collaborated with cross-functional teams, including data scientists, engineers, and business analysts, to deliver high-quality solutions.
-Contributed to the development of a finding writing tool for auditors.
-Collaborated with stakeholders to understand requirements and develop a solution that met the needs of the business.
-Utilized NLP and machine learning techniques to build a solution that provided grammatical error correction, text scoring, text rephrasing, and segregation of findings description into issue impact, background, and observation.
+At Virtusa, developed and implemented various projects in the field of AI and data management.
+Contributed to the development of a Data Lineage Utility which streamlined data tracking and management processes.
+Built an AI platform that provided advanced analytics and decision-making capabilities to clients.
+Developed a Data Quality Platform that ensured the accuracy and completeness of client data.
+Utilized Generative Adversarial Networks (GANs) to develop a Synthetic Image Generation tool that allowed for the creation of realistic images.
+Designed and implemented a Google Ads Validation Framework that ensured the compliance of Google Ads with relevant regulations.
 
 '''
 print([i for i in data.split('\n') if i!=""])

@@ -1064,6 +1064,13 @@ textarea.input{
     background-color: var(--scroll-thumb-color);
     border-radius: .5rem;
 }
+.award__link{
+    color: var(--skin-color);
+    
+}
+.open-source{
+    color: var(--skin-color);
+}
 /* Show Scroll Up*/
 
 
