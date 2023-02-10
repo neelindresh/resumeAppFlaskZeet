@@ -1,5 +1,5 @@
 from flask import Markup
-RESUME_LINK="pdf/Alexa-Cv.pdf"
+RESUME_LINK="pdf/resume2023.pdf"
 
 ABOUT_ME={
     "position":"Data Scientist | Author PyMLPipe",
