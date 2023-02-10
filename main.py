@@ -17,7 +17,8 @@ def index():
                                  skills=details.SKILLS,
                                  qualification=details.QUALIFICATION,
                                  projects=details.PROJECTS,
-                                 awards=detailsforawards
+                                 awards=detailsforawards,
+                                 roles_in_org=details.ROLES_AND_RESPOSIBILITY
                                  )
 @app.route("/jinja/")
 def index_jinja():

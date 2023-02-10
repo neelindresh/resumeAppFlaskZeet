@@ -700,6 +700,7 @@ margin-left: auto;
     background-color: var(--box-color);
     padding: 6rem 0 2rem 2.5rem;
     border-radius: .25rem;
+    margin-bottom: 25px;
 }
 .services__icon{
     display: block;
@@ -774,7 +775,7 @@ margin-left: auto;
 .services__modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-1-5);
 }
 
 .services__modal-description{
@@ -1215,6 +1216,7 @@ textarea.input{
     }
     .services__content{
         padding: 3.5rem .5rem 1.25rem 1.5rem;
+        margin-bottom: 25px;
     }
     .services__icon{
         font-size: 1.5rem;
@@ -1364,6 +1366,7 @@ textarea.input{
     }
     .services__content{
         padding-right: 3.5rem;
+        margin-bottom: 25px;
     }
 
 }

@@ -100,10 +100,10 @@
                 <div class="my__info">
                     
                     <div class="info__item">
-                        <i class="uil uil-facebook-messenger info__icon"></i>
+                        <i class="uil uil-incoming-call info__icon"></i>
                         <div>
-                            <h3 class="info__title">Messenger</h3>
-                            <span class="info__subtitle">usr.IBH</span>
+                            <h3 class="info__title">Call</h3>
+                            <span class="info__subtitle">+91-9564173039</span>
                         </div>
                     </div>
                     <div class="info__item">
@@ -346,8 +346,41 @@
         </div>
         <!--===== Services =====-->
         <section class="services section" id="services">
-            <h2 data-heading="Services" class="section__title">Waht I Offer</h2>
+            <h2 data-heading="My Role" class="section__title">In organization</h2>
             <div class="services__container container grid">
+                {%for role in roles_in_org%}
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">
+                            {{role["org"]}} <br> {{role["subtitle"]}}
+                        </h3>
+                    </div>
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class="services__modal-title">{{role["position"]}}</h3>
+                            <p class="services__modal-description">
+                                {{role['summary']}}
+                            </p>
+                            <ul class="services__modal-services grid">
+                                {%for kp in role["keypoints"]%}
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        {{kp}}
+                                    </p>
+                                </li>
+                                {%endfor%}
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -491,7 +524,7 @@
         </section>
         <!--===== Testimonials =====-->
         <section class="testimonials section">
-            <h2 data-heading="My Client Say" class="section__title">Testimonials</h2>
+            <h2 data-heading="My Achievement" class="section__title">Awards</h2>
             <div class="testimonials__container container swiper">
                 <div class="swiper-wrapper">
                     {%for i in awards%}
@@ -528,7 +561,7 @@
                         <div class="contact__card">
                             <i class="uil uil-envelope-edit contact__icon"></i>
                             <h3 class="contact__card-title">Email</h3>
-                            <span class="icontact__card-data">user@gmail.com</span>
+                            <span class="icontact__card-data">indresh2neel@gmail.com</span>
                             <span class="contact__button">
                                 Write Me <i class="uil uil-arrow-right contact__button-icon"></i>
                             </span>
@@ -536,15 +569,15 @@
                         <div class="contact__card">
                             <i class="uil uil-whatsapp contact__icon"></i>
                             <h3 class="contact__card-title">WhatsApp</h3>
-                            <span class="icontact__card-data">user@gmail.com</span>
+                            <span class="icontact__card-data">+91-9564173039</span>
                             <span class="contact__button">
                                 Write Me <i class="uil uil-arrow-right contact__button-icon"></i>
                             </span>
                         </div>
                         <div class="contact__card">
-                            <i class="uil uil-facebook-messenger contact__icon"></i>
-                            <h3 class="contact__card-title">Messenger</h3>
-                            <span class="icontact__card-data">user@gmail.com</span>
+                            <i class="uil uil-incoming-call contact__icon"></i>
+                            <h3 class="contact__card-title">Call</h3>
+                            <span class="icontact__card-data">+91-9564173039</span>
                             <span class="contact__button">
                                 Write Me <i class="uil uil-arrow-right contact__button-icon"></i>
                             </span>

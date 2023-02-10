@@ -1,17 +1,11 @@
 data='''
-Data Collection: Gather a diverse set of financial documents that need to be classified and organize them into different categories or classes.
+Worked closely with clients in the metal and mining sector to implement AI solutions for predictive maintenance, resulting in cost savings of 25Cr for the client.
+Conducted data analysis and built predictive models to identify areas for improvement and optimization.
+Collaborated with cross-functional teams, including data scientists, engineers, and business analysts, to deliver high-quality solutions.
+Contributed to the development of a finding writing tool for auditors.
+Collaborated with stakeholders to understand requirements and develop a solution that met the needs of the business.
+Utilized NLP and machine learning techniques to build a solution that provided grammatical error correction, text scoring, text rephrasing, and segregation of findings description into issue impact, background, and observation.
 
-Data Pre-processing: Clean and pre-process the data to remove any irrelevant information or formatting issues.
-
-Feature Engineering: Extract relevant features from the financial documents that can be used as inputs for the model.
-
-Model Selection: Choose an appropriate machine learning model for the classification task.
-
-Model Training: Train the model on the pre-processed data and fine-tune the model's hyperparameters to optimize its performance.
-
-Model Evaluation: Evaluate the performance of the model using appropriate metrics and make any necessary changes to improve its accuracy.
-
-Deployment: Deploy the model into a production environment and integrate it with any necessary tools or platforms.
 '''
 print([i for i in data.split('\n') if i!=""])
 
