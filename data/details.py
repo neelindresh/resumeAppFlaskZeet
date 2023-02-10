@@ -187,15 +187,7 @@ QUALIFICATION={
 PROJECTS=[
         {
                 "title":"PyMlPipe | MLOps toolbox",
-                "desc":'''Pymlpipe is a cutting-edge open-source machine learning operations (MLOps) toolkit built in Python. It aims to provide an all-in-one solution for managing and streamlining machine learning projects, from model training and deployment to infrastructure and data monitoring.
-
-                        With Pymlpipe, users can benefit from features such as model monitoring, data monitoring, infrastructure monitoring, and data drift detection. This toolkit also integrates with other popular open-source tools such as DVC, Concept Drift Detection, and eXplainable Artificial Intelligence (XAI), making it a comprehensive solution for MLOps.
-
-                        The model monitoring feature helps users keep track of their models' performance, ensuring they are working as expected and allowing for quick detection and resolution of any issues. The data monitoring feature allows users to track the quality of their data and detect any data drift, helping to avoid issues that could impact the model's performance.
-
-                        The pipeline feature provides a streamlined process for managing model training and deployment, reducing the time and effort required to get models up and running. The infrastructure monitoring feature helps users keep an eye on their resources and ensures their systems are performing optimally.
-
-                        Pymlpipe is designed to be user-friendly and accessible, making it a great choice for organizations and individuals looking for a comprehensive MLOps solution. With its integration with cutting-edge technologies and open-source tools, it is well-positioned to help users stay ahead of the curve and stay competitive in today's rapidly-evolving machine learning landscape.''',
+                "desc":"Pymlpipe is a cutting-edge open-source machine learning operations (MLOps) toolkit built in Python that provides an all-in-one solution for managing and streamlining machine learning projects. It includes features such as model monitoring, data monitoring, infrastructure monitoring, and data drift detection. It also integrates with other popular open-source tools such as DVC, Concept Drift Detection, and eXplainable Artificial Intelligence (XAI). Pymlpipe is designed to be user-friendly and accessible, making it a great choice for organizations and individuals looking for a comprehensive MLOps solution. It is well-positioned to help users stay ahead of the curve and stay competitive in today's rapidly-evolving machine learning landscape.",
                 "keypoints":[],
                 "role":"Data Scientist",
                 "org": "Open-Source",
@@ -206,14 +198,7 @@ PROJECTS=[
         },
         {
                 "title":"Finding writing tools for Auditors",
-                "desc":'''A Writing Tool for Auditors is a software application that helps auditors in their report writing process by providing features such as grammatical error correction, text scoring, text rephrasing, and segregating findings description into issue impact, background, and observation. The tool aims to enhance the efficiency, accuracy, and consistency of report writing for auditors by automating certain manual tasks and reducing the likelihood of human error. The tool can be built using various technologies such as NLP, AI, and machine learning.Define the requirements and feature set of the tool.Research and analyze the existing solutions in the market
-                        Design the architecture of the tool
-                        Develop the grammatical error correction module using NLP techniques and AI algorithms
-                        Implement the text scoring module to evaluate the quality of the written text
-                        Implement the text rephrasing module to provide alternate phrasing options for the written text
-                        Implement the segregation module to categorize findings into issue impact, background, and observation
-                        Integrate all the modules and test the tool for bugs and performance
-                        Release the tool and continually improve it based on user feedback.''',
+                "desc":'''A Writing Tool for Auditors is a software application that helps auditors in their report writing process by providing features such as grammatical error correction, text scoring, text rephrasing, and segregating findings description into issue impact, background, and observation. It aims to enhance the efficiency, accuracy, and consistency of report writing for auditors by automating certain manual tasks and reducing the likelihood of human error. The tool can be built using various technologies such as NLP, AI, and machine learning. It is designed to define the requirements and feature set of the tool, research and analyze existing solutions in the market, and design the architecture of the tool. It also integrates all the modules and test the tool for bugs and performance. Finally, it releases the tool and continually improves it based on user feedback..''',
                 "keypoints":['Research: Start by researching the available tools in the market and the features they provide. This will give you a good idea of what is possible and what is not.', 'Determine the Requirements: Identify the key requirements for the tool, such as grammatical error correction, text scoring, text rephrasing, and the ability to segregate findings descriptions into issue impact, background, and observation.', 'Design the Architecture: Design the overall architecture of the tool, keeping in mind the features you want to include. Consider using an NLP library or toolkit to handle the text processing, scoring, and rephrasing features.', 'Implementation: Start coding the tool based on the architecture design. You can use Python or other programming languages to build the tool.', 'Testing and Debugging: Test the tool to make sure it works as expected. Debug any issues that arise and make any necessary changes.', 'Deployment: Deploy the tool and make it available to auditors. You can either deploy it as a standalone tool or integrate it into an existing audit management system.', 'Maintenance and Support: Provide ongoing maintenance and support for the tool to ensure its continued performance and reliability.'],
                 "role":"Data Scientist",
                 "org": "KPMG",
@@ -554,7 +539,15 @@ SOCIALS={
 
 
 
+'''Pymlpipe is a cutting-edge open-source machine learning operations (MLOps) toolkit built in Python. It aims to provide an all-in-one solution for managing and streamlining machine learning projects, from model training and deployment to infrastructure and data monitoring.
 
+                        With Pymlpipe, users can benefit from features such as model monitoring, data monitoring, infrastructure monitoring, and data drift detection. This toolkit also integrates with other popular open-source tools such as DVC, Concept Drift Detection, and eXplainable Artificial Intelligence (XAI), making it a comprehensive solution for MLOps.
+
+                        The model monitoring feature helps users keep track of their models' performance, ensuring they are working as expected and allowing for quick detection and resolution of any issues. The data monitoring feature allows users to track the quality of their data and detect any data drift, helping to avoid issues that could impact the model's performance.
+
+                        The pipeline feature provides a streamlined process for managing model training and deployment, reducing the time and effort required to get models up and running. The infrastructure monitoring feature helps users keep an eye on their resources and ensures their systems are performing optimally.
+
+                        Pymlpipe is designed to be user-friendly and accessible, making it a great choice for organizations and individuals looking for a comprehensive MLOps solution. With its integration with cutting-edge technologies and open-source tools, it is well-positioned to help users stay ahead of the curve and stay competitive in today's rapidly-evolving machine learning landscape.'''
 
 
 """
